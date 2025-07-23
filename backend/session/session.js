@@ -6,7 +6,12 @@ const sessionMiddleware = session({
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
-    cookie: { maxAge: SESSION_DURATION_MS }
+    cookie: {
+        maxAge: SESSION_DURATION_MS,
+        httpOnly: true,
+        sameSite: 'none',
+        secure: true
+    }
 })
 
 function guard(req, res, next) {

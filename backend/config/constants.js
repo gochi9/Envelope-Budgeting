@@ -1,5 +1,6 @@
 module.exports = {
-    CLIENT_BASE: true,
+    CLIENT_BASE: 'https://envelope-budgeting-ppko.onrender.com',
+    PORT: 3001,
    // CLIENT_BASE: 'http://localhost:5173',
     MIN_PASSWORD_LENGTH: 8,
     RATE_LIMIT_COUNT: 5,

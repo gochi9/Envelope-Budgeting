@@ -14,13 +14,17 @@ function sendState(socket, uid) {
 }
 
 function initSocket(server, sessionMiddleware) {
-    const io = new Server(server, { cors: { origin: CLIENT_BASE, credentials: true } })
+    const io = new Server(server, {
+        cors: {
+            origin: CLIENT_BASE,
+            credentials: true
+        }
+    })
 
     io.use((socket, next) => sessionMiddleware(socket.request, {}, next))
     io.use((socket, next) => {
         if (!socket.request.session.userId)
             return next(new Error('unauth'))
-
         next()
     })
 

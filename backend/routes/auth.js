@@ -45,6 +45,13 @@ router.post('/login', (req, res) => {
 
     const name = String(req.body.username || '').toLowerCase()
     const pass = String(req.body.password || '')
+
+    if (pass.length < MIN_PASSWORD_LENGTH){
+        rec.count++
+        attempts.set(ip, rec)
+        return res.status(400).send('short')
+    }
+
     db.get('SELECT id,passwordHash FROM users WHERE username = ?', [name], async (_, row) => {
         if (!row) {
             rec.count++
