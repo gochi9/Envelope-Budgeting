@@ -15,6 +15,8 @@ const app = express()
 const server = http.createServer(app)
 const io = initSocket(server, sessionMiddleware)
 
+const port = process.env.PORT || 3000
+
 app.use(cors({ origin: CLIENT_BASE, credentials: true }))
 app.use(express.json())
 app.use(cookieParser())
@@ -24,4 +26,4 @@ app.use(authRouter)
 app.use(createStateRouter(io))
 app.use(createEnvelopesRouter(io))
 
-server.listen(3000)
+server.listen(port)

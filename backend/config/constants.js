@@ -1,5 +1,6 @@
 module.exports = {
-    CLIENT_BASE: 'http://localhost:5173',
+    CLIENT_BASE: true,
+   // CLIENT_BASE: 'http://localhost:5173',
     MIN_PASSWORD_LENGTH: 8,
     RATE_LIMIT_COUNT: 5,
     RATE_LIMIT_TIME: 60 * 1000,
