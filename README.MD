@@ -1,7 +1,7 @@
 Site available at: https://envelope-budgeting-ppko.onrender.com/
 
-![img_1.png](img_1.png)
-![img.png](img.png)
+![img_1.png](https://i.imgur.com/w98JbvA.png)
+![img.png](https://i.imgur.com/gyDtHzc.png)
 
 This is a budgeting tool based on the envelope method. You allocate income into virtual envelopes and spend from them as needed. It runs on React on the frontend and Express.js on the backend. Real-time updates are handled via socket.io, and the UI uses basic CSS without any UI frameworks.
 
