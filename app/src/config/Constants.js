@@ -1,4 +1,4 @@
-export const API_BASE = 'http://localhost:3000'
+export const API_BASE = 'https://envelope.genix.social'
 export const DEFAULT_THEME = true
 
 export const MAX_USERNAME_LENGTH = 64
