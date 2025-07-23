@@ -1,0 +1,51 @@
+body.dark{
+    background:linear-gradient(to bottom right,#1e293b,#0f172a);
+    color:#f1f5f9;
+}
+
+body.dark .card{
+    background:rgba(30,41,59,.9);
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+body.dark .login-card{
+    background:rgba(30,41,59,.9);
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+body.dark .title{
+    color:#f8fafc;
+}
+
+body.dark .income{
+    color:#38bdf8;
+}
+
+body.dark .envelope{
+    background:#1e293b;
+    border:1px solid #334155;
+}
+
+body.dark .env-name{
+    color:#e2e8f0;
+}
+
+body.dark .env-amount{
+    color:#cbd5e1;
+}
+
+body.dark .input-group input,
+body.dark .env-input{
+    background:#0f172a;
+    color:#f1f5f9;
+    border:1px solid #334155;
+}
+
+body.dark .toggle-track{
+    background:#334155;
+}
+
+body.dark .logout-button {
+    background:#000000;
+    color: white;
+}

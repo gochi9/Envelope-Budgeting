@@ -1,0 +1,23 @@
+body{
+    margin:0;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    background:linear-gradient(to bottom right,#fdfdfd,#e6ecf2);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+body,
+.card,
+.input-group input,
+.input-group button,
+.envelope,
+.env-input,
+.env-actions button,
+.title,
+.income,
+.env-name,
+.env-amount{
+    transition:all .3s ease;
+}

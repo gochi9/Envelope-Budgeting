@@ -1,0 +1,94 @@
+.envelope-list{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.envelope{
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+    padding:1rem;
+    border-radius:1rem;
+    box-shadow:0 4px 10px rgba(0,0,0,.02);
+}
+
+.env-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+}
+
+.env-input{
+    width:90px;
+    padding:.4rem .6rem;
+    border:1px solid #d1d5db;
+    border-radius:.5rem;
+    font-size:.9rem;
+    background:#fff;
+    color:#1f2937;
+    outline:none;
+}
+
+.env-input:focus{
+    border-color:#3b82f6;
+}
+
+.env-name{
+    font-size:1.1rem;
+    font-weight:600;
+    margin-bottom:.5rem;
+    color:#1e293b;
+}
+
+.env-amount{
+    color:#4b5563;
+    margin-bottom:.75rem;
+}
+
+.env-actions{
+    display:flex;
+    gap:.5rem;
+}
+
+.env-actions button{
+    flex:1;
+    padding:.4rem .6rem;
+    font-size:.9rem;
+    border:none;
+    border-radius:.5rem;
+    cursor:pointer;
+    transition:background .2s;
+    background:#3b82f6;
+}
+
+.env-actions button:hover{
+    background:#2563eb;
+}
+
+.env-actions button:first-child{
+    background:#fbbf24;
+    color:#fff;
+}
+
+.env-actions button:first-child:hover{
+    background:#f59e0b;
+}
+
+.env-actions button:nth-child(2){
+    background:#10b981;
+    color:#fff;
+}
+
+.env-actions button:nth-child(2):hover{
+    background:#059669;
+}
+
+.env-actions button:last-child{
+    background:#ef4444;
+    color:#fff;
+}
+
+.env-actions button:last-child:hover{
+    background:#dc2626;
+}
